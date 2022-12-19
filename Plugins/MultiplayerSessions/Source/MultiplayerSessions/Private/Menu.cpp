@@ -97,7 +97,7 @@ void UMenu::OnCreateSession(bool bWasSuccessful)
 		{
 			GEngine->AddOnScreenDebugMessage(
 				-1,
-				15.f,
+				15.f, 
 				FColor::Red,
 				FString::Printf(TEXT("Failed to create session!"))
 			);
