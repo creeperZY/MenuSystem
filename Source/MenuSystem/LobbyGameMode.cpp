@@ -18,7 +18,7 @@ void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 		{
 			GEngine->AddOnScreenDebugMessage(
 				1,
-				60.f,
+				600.f,
 				FColor::Yellow,
 				FString::Printf(TEXT("Players in game: %d"), NumberOfPlayer)
 			);
@@ -50,7 +50,7 @@ void ALobbyGameMode::Logout(AController* Exiting)
 		int32 NumberOfPlayer = GameState.Get()->PlayerArray.Num();
 		GEngine->AddOnScreenDebugMessage(
 			1,
-			60.f,
+			600.f,
 			FColor::Yellow,
 			FString::Printf(TEXT("Players in game: %d"), NumberOfPlayer - 1)
 		);
